@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        #start-prediction-button {
+            padding: 8px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+ 
+        #start-prediction-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Welcome to the Prediction System</h2>
+        <form action="{{ url_for('start_prediction') }}" method="post">
+            <button id="start-prediction-button" type="submit">Start Prediction</button>
+        </form>
+    </div>
+</body>
+</html>
